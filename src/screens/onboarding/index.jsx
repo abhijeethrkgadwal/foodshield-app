@@ -3,8 +3,13 @@ import React from 'react'
 import colors from '@app/theme/colors'
 import { Button, Flex, Heading, Image, StatusBar, VStack } from 'native-base'
 import { IMAGES } from '@app/assets/images'
+import { SCREENS } from '@app/constants'
 
-const Onboarding = () => {
+const Onboarding = ({navigation}) => {
+
+  const onGetStart = () => {
+    navigation.navigate(SCREENS.USER_BOTTOM_TABS);
+  };
 
   const { width } = useWindowDimensions();
 
@@ -20,19 +25,19 @@ const Onboarding = () => {
         </Heading>
       </VStack>
       <Image
-        alt="logo"
+        alt="onboarding"
         source={IMAGES.onBoarding}
         resizeMode='contain'
       />
       <VStack my="auto" alignItems="center">
-        <Button bgColor={colors.gray} width={width / 2}>
+        <Button bgColor={colors.gray} width={width / 2} onPress={onGetStart}>
           <Heading fontFamily="heading" fontWeight="400" color={colors.green} fontSize={20}>
             Get Start
           </Heading>
         </Button>
-        <Heading fontFamily="heading" fontWeight="400" fontSize={20} mt={2} color={colors.gray}>
+        {/* <Heading fontFamily="heading" fontWeight="400" fontSize={20} mt={2} color={colors.gray}>
           Login
-        </Heading>
+        </Heading> */}
       </VStack>
     </Flex>
   )

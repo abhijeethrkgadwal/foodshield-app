@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SCREENS } from "@app/constants";
 import colors from "@app/theme/colors";
 import Onboarding from "@app/screens/onboarding";
+import UserBottomTabs from "./user-bottom-tabs";
 
 const navTheme = {
   ...DefaultTheme,
@@ -24,6 +25,7 @@ const Navigation = () => {
     <NavigationContainer theme={navTheme}>
       <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen name={SCREENS.ONBOARDING} component={Onboarding} />
+        <Stack.Screen name={SCREENS.USER_BOTTOM_TABS} component={UserBottomTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
