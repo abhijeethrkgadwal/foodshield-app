@@ -26,6 +26,7 @@ const theme = extendTheme({
   colors: {
     primary: {
       600: colors.green,
+      500: colors.gray
     },
   },
   components: {
