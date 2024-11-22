@@ -5,14 +5,19 @@ import colors from '@app/theme/colors'
 import Header from '@app/components/Header'
 import { IMAGES } from '@app/assets/images'
 import { ICONS } from '@app/assets/svgs'
+import { SCREENS } from '@app/constants'
 
-const Home = () => {
+const Home = ({ navigation }) => {
+
+  const onPressScan = () => {
+    navigation.navigate(SCREENS.SCAN)
+  }
 
   const { width, height } = useWindowDimensions();
 
   return (
     <Flex bgColor={colors.gray} flex={0} safeArea>
-      <Header />
+      <Header showBack={false}/>
       <VStack mt={height/32} >
         <Text fontFamily="mono" fontWeight="600" fontSize={31} color={colors.green} ml={'5'}>
           Eat Smart,{"\n"}Stay Healthy : {"\n"}Scan, Analyse, and {"\n"}Choose Better
@@ -28,8 +33,8 @@ const Home = () => {
           />
           <VStack position="absolute" top={'1/3'} alignItems="center">
           <Button
-            leftIcon={<ICONS.Scan />} size="lg" mr={5} width={width/2.5} marginY="auto">
-            <Text fontFamily="mono" fontWeight="400" color={colors.white} pl={4} fontSize={20}>Scan</Text>
+            leftIcon={<ICONS.Scan color={colors.white}/>} size="lg" mr={5} width={width/2.5} marginY="auto">
+            <Text fontFamily="mono" fontWeight="400" color={colors.white} pl={4} fontSize={20} onPress={onPressScan}>Scan</Text>
           </Button>
           <Text fontFamily="mono" fontWeight="400" fontSize={16} color={colors.text} paddingTop="4" paddingRight="5">
             Scan the product

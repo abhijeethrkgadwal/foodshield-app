@@ -1,21 +1,40 @@
-import { View, Text, useWindowDimensions } from 'react-native'
+import { useWindowDimensions } from 'react-native'
 import React from 'react'
-import { Heading, HStack } from 'native-base'
+import { Box, Heading, HStack, Pressable, Text, VStack } from 'native-base'
 import { ICONS } from '@app/assets/svgs'
 import colors from '@app/theme/colors'
+import { useNavigation } from '@react-navigation/native'
 
-const Header = () => {
+const Header = ({ showBack = true }) => {
+  const navigation = useNavigation();
 
-    const { height } = useWindowDimensions();
+  const onPressBack = () => {
+    navigation.goBack();
+  };
+
+  const { height } = useWindowDimensions();
+
   return (
-    <HStack bgColor={colors.white} mt={height/24} width={"full"} padding={5} justifyContent="space-between" alignItems="center">
+    <VStack>
+      {showBack ?
+        <Pressable onPress={onPressBack}>
+          <HStack h={height / 24} bgColor={colors.gray} alignItems="center" pl={1}>
+            <ICONS.ArrowBack
+              style={{ transform: [{ scale: 1.1 }] }}
+            />
+            <Text>Back</Text>
+          </HStack>
+        </Pressable>
+        : (<Box w={3} />)}
+      <HStack bgColor={colors.white} mt={showBack ? 0 : height / 24} width={"full"} padding={5} justifyContent="space-between" alignItems="center">
         <Heading fontFamily="heading" fontWeight="600" color={colors.green} fontSize={40}>
-            FoodShield
+          FoodShield
         </Heading>
         <ICONS.Search
-        style={{}}
+          style={{}}
         />
-    </HStack>
+      </HStack>
+    </VStack>
   )
 }
 

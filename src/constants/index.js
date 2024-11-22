@@ -5,6 +5,8 @@ export const SCREENS = {
     HISTORY: "History",
     CART: "Cart",
     PROFILE: "Profile",
+    SCAN: "Scan",
+    RESULT: "Result",
 
     USER_BOTTOM_TABS: "UserBottomTabs",
   };

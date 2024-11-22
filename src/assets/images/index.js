@@ -1,4 +1,5 @@
 export const IMAGES = {
     onBoarding: require("./onBoarding.png"),
-    scan: require("./scan.png")
+    scan: require("./scan.png"),
+    scanner: require("./scanner.png")
 }
