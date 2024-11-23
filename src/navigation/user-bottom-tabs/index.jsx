@@ -36,7 +36,7 @@ const HomeScreen = () => {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name={"MainScreen"} component={Home} />
             <Stack.Screen name={SCREENS.SCAN} component={Scan} options={{unmountOnBlur: true}}/>
-            <Stack.Screen name={SCREENS.RESULT} component={Result} />
+            {/* <Stack.Screen name={SCREENS.RESULT} component={Result} /> */}
         </Stack.Navigator>
     )
 }

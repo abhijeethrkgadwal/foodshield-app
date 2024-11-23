@@ -1,0 +1,60 @@
+{
+    "Ingredients": {
+        "Negative": [
+            {
+                "Ingredient": "Sugar",
+                "Percentage": "30"
+            },
+            {
+                "Ingredient": "Sodium",
+                "Percentage": "1.2"
+            },
+            {
+                "Ingredient": "Preservatives (BHA, BHT)",
+                "Percentage": "1.5"
+            },
+            {
+                "Ingredient": "Artificial Colors",
+                "Percentage": "0.5"
+            },
+            {
+                "Ingredient": "Artificial flavour",
+                "Percentage": "3.5"
+            },
+            {
+                "Ingredient": "Corn Syrup Solids",
+                "Percentage": "12"
+            },
+            {
+                "Ingredient": "Maltodextrin",
+                "Percentage": "8"
+            }
+        ],
+        "Positive": [
+            {
+                "Ingredient": "Vitamin C",
+                "Percentage": "15"
+            },
+            {
+                "Ingredient": "Citric Acid",
+                "Percentage": "5.5"
+            },
+            {
+                "Ingredient": "Orange Juice Solids",
+                "Percentage": "4.5"
+            },
+            {
+                "Ingredient": "Calcium",
+                "Percentage": "2.5"
+            },
+            {
+                "Ingredient": "Potassium",
+                "Percentage": "2"
+            },
+            {
+                "Ingredient": "Gum Arabic",
+                "Percentage": "1"
+            }
+        ]
+    }
+}
