@@ -4,6 +4,7 @@ import colors from '@app/theme/colors'
 import { Button, Flex, Heading, Image, StatusBar, VStack } from 'native-base'
 import { IMAGES } from '@app/assets/images'
 import { SCREENS } from '@app/constants'
+import { ICONS } from '@app/assets/svgs'
 
 const Onboarding = ({navigation}) => {
 
@@ -24,11 +25,7 @@ const Onboarding = ({navigation}) => {
           eat smart, stay healthy
         </Heading>
       </VStack>
-      <Image
-        alt="onboarding"
-        source={IMAGES.onBoarding}
-        resizeMode='contain'
-      />
+      <ICONS.OnBoarding/>
       <VStack my="auto" alignItems="center">
         <Button bgColor={colors.gray} width={width / 2} onPress={onGetStart}>
           <Heading fontFamily="heading" fontWeight="400" color={colors.green} fontSize={20}>

@@ -6,11 +6,12 @@ import { useNavigation } from '@react-navigation/native'
 import { SCREENS } from '@app/constants'
 import { Pressable } from 'react-native'
 
-const Loader = ({ result }) => {
+const Loader = ({ result, capturedImage }) => {
   const navigation = useNavigation();
 
   const onResult = () => {
-    navigation.navigate(SCREENS.RESULT)
+    console.log(capturedImage)
+    navigation.navigate(SCREENS.RESULT, {capturedImage: capturedImage})
   }
 
   return (

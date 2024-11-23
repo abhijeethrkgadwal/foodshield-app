@@ -25,12 +25,14 @@ export default function Scan({ navigation }) {
     setImageName(photo.uri.split('/').reverse()[0])
     setLoading(true)
     uploadImage(photo)
+    // Temporary for showcase
+    setCapturedImage(photo.uri)
 
   }
 
   const getImage = async () => {
     const res = await getImageApi(imageName)
-    setCapturedImage(res)
+    // setCapturedImage(res)
     setGet(true)
   }
 
@@ -96,7 +98,7 @@ export default function Scan({ navigation }) {
 
   return (
     isLoading ? (
-      <Loader />
+      <Loader capturedImage={capturedImage}/>
     ) :
       previewVisible && capturedImage ? (
         <ImagePreview />

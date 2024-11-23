@@ -41,7 +41,6 @@ const renderPositiveItem = (item,index) => (
 )
 
 const IngredientSection = ({ valueBasedIngredients, positiveIngreditents }) => {
-    console.log(valueBasedIngredients)
     return ( positiveIngreditents ? (
             <VStack pb={'10'}>
                 <Text fontFamily="mono" fontWeight="400" fontSize="18" color={colors.green} pb={'3'}>

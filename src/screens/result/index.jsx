@@ -1,13 +1,17 @@
 import { useWindowDimensions } from 'react-native'
 import React from 'react'
 import Header from '@app/components/Header'
-import { Box, Flex, HStack, Image, ScrollView, Text, VStack } from 'native-base'
+import { Box, Button, Flex, HStack, Image, ScrollView, Text, VStack } from 'native-base'
 import colors from '@app/theme/colors'
 import { ICONS } from '@app/assets/svgs'
 import IngredientSection from '@app/components/Ingredients'
 import ingredientsJson from '@app/utils/ingredients.json'
+import Recommended from '@app/components/Recommended'
+import { useRoute } from '@react-navigation/native'
 
 const Result = () => {
+  const route = useRoute();
+  const { capturedImage } = route.params
 
   const { height } = useWindowDimensions();
 
@@ -16,15 +20,15 @@ const Result = () => {
   return (
     <Flex flex={1} safeArea>
       <Header />
-      <ScrollView flex={1} px={'5'}>
-        <Box height={height / 4} bgColor={colors.subText} />
-        {/* <Image
+      <ScrollView flex={1} px={'5'} pt={'4'}>
+        {/* <Box height={height / 4} bgColor={colors.subText} /> */}
+        <Image
       alt="food"
-      source={''}
-      height={1/2}
+      source={{uri: `${capturedImage}`}}
+      height={height / 4}
       resizeMode='contain'
-      /> */}
-        <VStack flex={1} mt={'5'}>
+      />
+        <VStack flex={1} mt={'5'} mb={'16'}>
 
           <HStack justifyContent="space-between">
             <HStack my="auto" alignItems="center" space={'5'}>
@@ -55,6 +59,7 @@ const Result = () => {
           <IngredientSection valueBasedIngredients={Positive} positiveIngreditents={true} />
         </VStack>
       </ScrollView>
+      <Recommended/>
     </Flex>
   )
 }

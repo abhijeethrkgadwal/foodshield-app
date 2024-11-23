@@ -11,6 +11,12 @@ import ArrowLeftDouble from "./arrow-left-double.svg"
 import Avoid from "./avoid.svg"
 import ProgressCircle from "./progress-circle.svg"
 import ArrowDown from "./arrow-down.svg"
+import ArrowUp from "./arrow-up.svg"
+import ContentCircle from "./content-circle.svg"
+import Health from "./health.svg"
+import Vegan from "./vegan.svg"
+import ArrowRight from "./arrow-right.svg"
+import OnBoarding from "./onboarding.svg"
 
 export const ICONS = {
     Home,
@@ -25,5 +31,11 @@ export const ICONS = {
     ArrowLeftDouble,
     Avoid,
     ProgressCircle,
-    ArrowDown
+    ArrowDown,
+    ArrowUp,
+    ContentCircle,
+    Health,
+    Vegan,
+    ArrowRight,
+    OnBoarding
 }
