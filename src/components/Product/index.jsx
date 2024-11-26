@@ -30,11 +30,11 @@ const Product = () => {
     />
     <VStack >
         <VStack alignItems="center" mt={-2} mb={1} space={'0.5'}>
-        <Text fontFamily="mono" fontWeight="400" fontSize={14} color={colors.text}>
+        <Text fontFamily="mono" fontWeight="600" fontSize={14} color={colors.text}>
           Chips
         </Text>
         <Text fontFamily="mono" fontWeight="400" fontSize={14} color={colors.text}>
-          Product Name
+          Healthy Chips
         </Text>
         </VStack>
         <HStack justifyContent="space-between" pr={3} mx={4}>
@@ -45,7 +45,7 @@ const Product = () => {
         </HStack>
         <HStack justifyContent="space-between" mt={'0.5'} mx={4}>
           <Text fontFamily="mono" fontWeight="400" fontSize={14} color={colors.text}>
-          £20.00
+          £2.00
           </Text>
           <Button size={'xs'} py={0}>
             <Text fontFamily="mono" fontWeight="400" fontSize={14} color={colors.white}>

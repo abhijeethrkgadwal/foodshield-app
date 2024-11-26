@@ -2,12 +2,12 @@ import colors from '@app/theme/colors';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { Box, Button, Flex, HStack, Image, Spinner, Text, View, VStack } from 'native-base';
 import React, { useRef, useState } from 'react';
-import { StyleSheet } from 'react-native';
 import Header from '@app/components/Header';
 import { IMAGES } from '@app/assets/images';
 import { getImageApi, UploadImageApi } from '@app/network/api';
 import { ICONS } from '@app/assets/svgs';
 import Loader from '@app/components/Loader';
+import { SCREENS } from '@app/constants';
 
 export default function Scan({ navigation }) {
   const [permission, requestPermission] = useCameraPermissions();
@@ -21,12 +21,16 @@ export default function Scan({ navigation }) {
 
   const takePicture = async () => {
     const photo = await camera.current.takePictureAsync({
+      base64: true
     })
     setImageName(photo.uri.split('/').reverse()[0])
     setLoading(true)
-    uploadImage(photo)
-    // Temporary for showcase
+    // uploadImage(photo)
     setCapturedImage(photo.uri)
+    setTimeout(() => {
+      setLoading(false)
+      navigation.navigate(SCREENS.RESULT, {capturedImage: photo.uri})
+    }, 10000);
 
   }
 
@@ -36,7 +40,8 @@ export default function Scan({ navigation }) {
     setGet(true)
   }
 
-  const ImagePreview = () => {
+    // Temporary for showcase
+    const ImagePreview = () => {
     return (get ? (
       <View flex={1}>
         <Image
@@ -55,7 +60,6 @@ export default function Scan({ navigation }) {
   }
 
   const uploadImage = async (photo) => {
-    console.log("uploadImageFunction")
     const file = {
       uri: photo.uri,
       name: photo.uri.split('/').reverse()[0],
@@ -96,16 +100,17 @@ export default function Scan({ navigation }) {
     );
   }
 
+  if(isLoading){
+    return <Loader capturedImage={capturedImage}/>
+  }
+
   return (
-    isLoading ? (
-      <Loader capturedImage={capturedImage}/>
-    ) :
-      previewVisible && capturedImage ? (
-        <ImagePreview />
-      ) :
+      // previewVisible && capturedImage ? (
+      //   <ImagePreview />
+      // ) :
         <Flex flex={1} justifyContent="center">
-          <CameraView flex={1} ref={camera} alignItems="center">
             <Header />
+          <CameraView flex={1} ref={camera} alignItems="center">
             <Image
               alt=""
               source={IMAGES.scanner}

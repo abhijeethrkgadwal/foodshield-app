@@ -30,9 +30,9 @@ const Header = ({ showBack = true }) => {
         <Heading fontFamily="heading" fontWeight="600" color={colors.green} fontSize={40}>
           FoodShield
         </Heading>
-        <ICONS.Search
+        {/* <ICONS.Search
           style={{}}
-        />
+        /> */}
       </HStack>
     </VStack>
   )
