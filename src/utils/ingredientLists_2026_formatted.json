@@ -1,0 +1,2323 @@
+{
+  "version": 1,
+  "lists": {
+    "banned": [
+      {
+        "name": "Sodium Cyclamate",
+        "aliases": [
+          "sodium cyclamate",
+          "cyclamic acid sodium salt",
+          "E952",
+          "E 952",
+          "INS 952"
+        ],
+        "severity": "high",
+        "reason": "Not permitted as a sweetener in the United States.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Calcium Cyclamate",
+        "aliases": [
+          "calcium cyclamate",
+          "E952",
+          "INS 952"
+        ],
+        "severity": "high",
+        "reason": "Not permitted as a sweetener in the United States.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Potassium Cyclamate",
+        "aliases": [
+          "potassium cyclamate",
+          "E952",
+          "INS 952"
+        ],
+        "severity": "high",
+        "reason": "Not permitted as a sweetener in the United States.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Magnesium Cyclamate",
+        "aliases": [
+          "magnesium cyclamate",
+          "E952",
+          "INS 952"
+        ],
+        "severity": "high",
+        "reason": "Not permitted as a sweetener in the United States.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Brominated Vegetable Oil",
+        "aliases": [
+          "BVO",
+          "brominated vegetable oil",
+          "brominated soybean oil",
+          "brominated corn oil"
+        ],
+        "severity": "high",
+        "reason": "FDA revoked authorization for use in food; U.S. food use is no longer allowed.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Partially Hydrogenated Oils",
+        "aliases": [
+          "PHO",
+          "partially hydrogenated oil",
+          "partially hydrogenated vegetable oil",
+          "partially hydrogenated soybean oil",
+          "partially hydrogenated cottonseed oil",
+          "partially hydrogenated fat"
+        ],
+        "severity": "high",
+        "reason": "FDA revoked the food uses of partially hydrogenated oils; they are no longer permitted as added food ingredients in the U.S.",
+        "regions": [
+          "US"
+        ]
+      },
+      {
+        "name": "Titanium Dioxide",
+        "aliases": [
+          "titanium dioxide",
+          "titanium oxide",
+          "TiO2",
+          "E171",
+          "E 171",
+          "INS 171"
+        ],
+        "severity": "high",
+        "reason": "No longer authorized as a food additive in the European Union; Northern Ireland follows EU food-additive rules.",
+        "regions": [
+          "EU",
+          "UK-NI"
+        ]
+      },
+      {
+        "name": "Potassium Bromate",
+        "aliases": [
+          "potassium bromate",
+          "bromated flour",
+          "E924a",
+          "E 924a",
+          "INS 924a"
+        ],
+        "severity": "high",
+        "reason": "Prohibited for use in food in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Calcium Bromate",
+        "aliases": [
+          "calcium bromate",
+          "E924b",
+          "E 924b",
+          "INS 924b"
+        ],
+        "severity": "high",
+        "reason": "Not permitted as a food additive in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Metanil Yellow",
+        "aliases": [
+          "metanil yellow",
+          "metanil yellow dye",
+          "acid yellow 36",
+          "CI 13065"
+        ],
+        "severity": "high",
+        "reason": "Unpermitted synthetic colour used as a food adulterant in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Rhodamine B",
+        "aliases": [
+          "rhodamine B",
+          "rhodamine-b",
+          "CI 45170",
+          "brilliant pink B"
+        ],
+        "severity": "high",
+        "reason": "Unpermitted colour for food use in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Orange G",
+        "aliases": [
+          "orange G",
+          "orange g dye",
+          "acid orange 10",
+          "CI 16230"
+        ],
+        "severity": "high",
+        "reason": "Unpermitted synthetic food colour in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Blue VRS",
+        "aliases": [
+          "blue VRS",
+          "blue VRS dye"
+        ],
+        "severity": "high",
+        "reason": "Identified by FSSAI among non-permitted colours used as food adulterants in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Auramine O",
+        "aliases": [
+          "auramine O",
+          "auramine",
+          "basic yellow 2",
+          "CI 41000"
+        ],
+        "severity": "high",
+        "reason": "Unpermitted dye for food use in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Sudan I",
+        "aliases": [
+          "sudan I",
+          "sudan 1",
+          "sudan one",
+          "CI 12055"
+        ],
+        "severity": "high",
+        "reason": "Industrial azo dye not permitted as a food colour in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Sudan II",
+        "aliases": [
+          "sudan II",
+          "sudan 2",
+          "sudan two",
+          "CI 12140"
+        ],
+        "severity": "high",
+        "reason": "Industrial azo dye not permitted as a food colour in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Sudan III",
+        "aliases": [
+          "sudan III",
+          "sudan 3",
+          "sudan three",
+          "CI 26100"
+        ],
+        "severity": "high",
+        "reason": "Industrial azo dye not permitted as a food colour in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Sudan IV",
+        "aliases": [
+          "sudan IV",
+          "sudan 4",
+          "sudan four",
+          "CI 26105"
+        ],
+        "severity": "high",
+        "reason": "Industrial azo dye not permitted as a food colour in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Fast Red",
+        "aliases": [
+          "fast red",
+          "fast red dye",
+          "fast red E"
+        ],
+        "severity": "high",
+        "reason": "FSSAI identifies fast red among non-permitted synthetic colours in foods in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Bromocresol Purple",
+        "aliases": [
+          "bromocresol purple",
+          "bromo-cresol purple",
+          "BCP",
+          "CI 42190"
+        ],
+        "severity": "high",
+        "reason": "FSSAI identifies bromocresol purple among non-permitted colours in foods in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Green S",
+        "aliases": [
+          "green S",
+          "food green S",
+          "E142",
+          "E 142",
+          "CI 44090",
+          "INS 142"
+        ],
+        "severity": "high",
+        "reason": "FSSAI identifies Green S among non-permitted synthetic colours in foods in India.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Calcium Carbide for Fruit Ripening",
+        "aliases": [
+          "calcium carbide",
+          "calcium acetylide",
+          "carbide",
+          "masala for ripening"
+        ],
+        "severity": "high",
+        "reason": "Strictly prohibited for artificial fruit ripening in India; FSSAI permits controlled ethylene-based ripening instead.",
+        "regions": [
+          "IN"
+        ]
+      },
+      {
+        "name": "Orange B",
+        "aliases": [
+          "orange B",
+          "acid orange 137",
+          "CI 15510"
+        ],
+        "severity": "high",
+        "reason": "FDA food-use authorization ended September 8, 2026.",
+        "regions": [
+          "US"
+        ]
+      }
+    ],
+    "restricted": [
+      {
+        "name": "Curcumin",
+        "aliases": [
+          "curcumin",
+          "turmeric extract",
+          "E100",
+          "E 100",
+          "INS 100(i)"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Riboflavins",
+        "aliases": [
+          "riboflavin",
+          "riboflavin-5-phosphate",
+          "E101",
+          "E 101",
+          "INS 101(i)"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Tartrazine",
+        "aliases": [
+          "tartrazine",
+          "E102",
+          "E 102",
+          "INS 102"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Quinoline Yellow",
+        "aliases": [
+          "quinoline yellow",
+          "E104",
+          "E 104",
+          "INS 104"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sunset Yellow FCF",
+        "aliases": [
+          "sunset yellow",
+          "sunset yellow FCF",
+          "E110",
+          "E 110",
+          "INS 110",
+          "yellow 6"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Cochineal",
+        "aliases": [
+          "cochineal",
+          "carminic acid",
+          "carmine",
+          "E120",
+          "E 120",
+          "INS 120"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Carmoisine",
+        "aliases": [
+          "carmoisine",
+          "azorubine",
+          "E122",
+          "E 122",
+          "INS 122"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Amaranth",
+        "aliases": [
+          "amaranth",
+          "amaranth red",
+          "E123",
+          "E 123",
+          "INS 123"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Ponceau 4R",
+        "aliases": [
+          "ponceau 4R",
+          "cochineal red A",
+          "E124",
+          "E 124",
+          "INS 124"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Erythrosine",
+        "aliases": [
+          "erythrosine",
+          "erythrosine B",
+          "E127",
+          "E 127",
+          "INS 127",
+          "red 3"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Allura Red AC",
+        "aliases": [
+          "allura red AC",
+          "allura red",
+          "E129",
+          "E 129",
+          "INS 129",
+          "red 40"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Patent Blue V",
+        "aliases": [
+          "patent blue V",
+          "E131",
+          "E 131",
+          "INS 131"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Indigo Carmine",
+        "aliases": [
+          "indigotine",
+          "indigo carmine",
+          "E132",
+          "E 132",
+          "INS 132",
+          "blue 2"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Brilliant Blue FCF",
+        "aliases": [
+          "brilliant blue FCF",
+          "E133",
+          "E 133",
+          "INS 133",
+          "blue 1"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Green S",
+        "aliases": [
+          "green S",
+          "E142",
+          "E 142",
+          "INS 142"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Brilliant Black BN",
+        "aliases": [
+          "brilliant black BN",
+          "black PN",
+          "E151",
+          "E 151",
+          "INS 151"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Brown HT",
+        "aliases": [
+          "brown HT",
+          "E155",
+          "E 155",
+          "INS 155"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Annatto Bixin",
+        "aliases": [
+          "annatto",
+          "bixin",
+          "E160b(i)",
+          "INS 160b(i)"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Annatto Norbixin",
+        "aliases": [
+          "annatto norbixin",
+          "norbixin",
+          "E160b(ii)",
+          "INS 160b(ii)"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Caramel Colour I",
+        "aliases": [
+          "plain caramel",
+          "caramel I",
+          "E150a",
+          "E 150a",
+          "INS 150a"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Caramel Colour II",
+        "aliases": [
+          "caustic sulfite caramel",
+          "caramel II",
+          "E150b",
+          "E 150b",
+          "INS 150b"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Caramel Colour III",
+        "aliases": [
+          "ammonia caramel",
+          "caramel III",
+          "E150c",
+          "E 150c",
+          "INS 150c"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Caramel Colour IV",
+        "aliases": [
+          "sulfite ammonia caramel",
+          "caramel IV",
+          "E150d",
+          "E 150d",
+          "INS 150d"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Vegetable Carbon",
+        "aliases": [
+          "vegetable carbon",
+          "charcoal black",
+          "E153",
+          "E 153",
+          "INS 153"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Iron Oxides and Hydroxides",
+        "aliases": [
+          "iron oxides",
+          "iron hydroxides",
+          "E172",
+          "E 172",
+          "INS 172"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions and maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sorbic Acid",
+        "aliases": [
+          "sorbic acid",
+          "E200",
+          "E 200",
+          "INS 200"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Sorbate",
+        "aliases": [
+          "potassium sorbate",
+          "E202",
+          "E 202",
+          "INS 202"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Sorbate",
+        "aliases": [
+          "calcium sorbate",
+          "E203",
+          "E 203",
+          "INS 203"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Benzoic Acid",
+        "aliases": [
+          "benzoic acid",
+          "E210",
+          "E 210",
+          "INS 210"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Benzoate",
+        "aliases": [
+          "sodium benzoate",
+          "E211",
+          "E 211",
+          "INS 211"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Benzoate",
+        "aliases": [
+          "potassium benzoate",
+          "E212",
+          "E 212",
+          "INS 212"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Benzoate",
+        "aliases": [
+          "calcium benzoate",
+          "E213",
+          "E 213",
+          "INS 213"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "aliases": [
+          "sulfur dioxide",
+          "sulphur dioxide",
+          "SO2",
+          "E220",
+          "E 220",
+          "INS 220"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Sulfite",
+        "aliases": [
+          "sodium sulfite",
+          "sodium sulphite",
+          "E221",
+          "E 221",
+          "INS 221"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Bisulfite",
+        "aliases": [
+          "sodium bisulfite",
+          "sodium hydrogen sulfite",
+          "sodium bisulphite",
+          "E222",
+          "E 222",
+          "INS 222"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Metabisulfite",
+        "aliases": [
+          "sodium metabisulfite",
+          "sodium pyrosulfite",
+          "sodium metabisulphite",
+          "E223",
+          "E 223",
+          "INS 223"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Metabisulfite",
+        "aliases": [
+          "potassium metabisulfite",
+          "potassium pyrosulfite",
+          "potassium metabisulphite",
+          "E224",
+          "E 224",
+          "INS 224"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Nisin",
+        "aliases": [
+          "nisin",
+          "E234",
+          "E 234",
+          "INS 234"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Natamycin",
+        "aliases": [
+          "natamycin",
+          "pimaricin",
+          "E235",
+          "E 235",
+          "INS 235"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Nitrite",
+        "aliases": [
+          "potassium nitrite",
+          "E249",
+          "E 249",
+          "INS 249"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Nitrite",
+        "aliases": [
+          "sodium nitrite",
+          "E250",
+          "E 250",
+          "INS 250"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Nitrate",
+        "aliases": [
+          "sodium nitrate",
+          "E251",
+          "E 251",
+          "INS 251"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Nitrate",
+        "aliases": [
+          "potassium nitrate",
+          "saltpetre",
+          "saltpeter",
+          "E252",
+          "E 252",
+          "INS 252"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Propionic Acid",
+        "aliases": [
+          "propionic acid",
+          "E280",
+          "E 280",
+          "INS 280"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Propionate",
+        "aliases": [
+          "sodium propionate",
+          "E281",
+          "E 281",
+          "INS 281"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Propionate",
+        "aliases": [
+          "calcium propionate",
+          "E282",
+          "E 282",
+          "INS 282"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Propionate",
+        "aliases": [
+          "potassium propionate",
+          "E283",
+          "E 283",
+          "INS 283"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "BHA",
+        "aliases": [
+          "butylated hydroxyanisole",
+          "BHA",
+          "E320",
+          "E 320",
+          "INS 320"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "BHT",
+        "aliases": [
+          "butylated hydroxytoluene",
+          "BHT",
+          "E321",
+          "E 321",
+          "INS 321"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Propyl Gallate",
+        "aliases": [
+          "propyl gallate",
+          "E310",
+          "E 310",
+          "INS 310"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "TBHQ",
+        "aliases": [
+          "tert-butylhydroquinone",
+          "TBHQ",
+          "E319",
+          "E 319",
+          "INS 319"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Phosphoric Acid",
+        "aliases": [
+          "phosphoric acid",
+          "orthophosphoric acid",
+          "E338",
+          "E 338",
+          "INS 338"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Phosphates",
+        "aliases": [
+          "sodium phosphates",
+          "monosodium phosphate",
+          "disodium phosphate",
+          "trisodium phosphate",
+          "E339",
+          "E 339"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Phosphates",
+        "aliases": [
+          "potassium phosphates",
+          "monopotassium phosphate",
+          "dipotassium phosphate",
+          "E340",
+          "E 340"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Phosphates",
+        "aliases": [
+          "calcium phosphates",
+          "monocalcium phosphate",
+          "dicalcium phosphate",
+          "tricalcium phosphate",
+          "E341",
+          "E 341"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Diphosphates",
+        "aliases": [
+          "diphosphates",
+          "pyrophosphates",
+          "E450",
+          "E 450",
+          "INS 450"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Triphosphates",
+        "aliases": [
+          "triphosphates",
+          "E451",
+          "E 451",
+          "INS 451"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polyphosphates",
+        "aliases": [
+          "polyphosphates",
+          "E452",
+          "E 452",
+          "INS 452"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Alginic Acid",
+        "aliases": [
+          "alginic acid",
+          "E400",
+          "E 400",
+          "INS 400"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Alginate",
+        "aliases": [
+          "sodium alginate",
+          "E401",
+          "E 401",
+          "INS 401"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Alginate",
+        "aliases": [
+          "potassium alginate",
+          "E402",
+          "E 402",
+          "INS 402"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Alginate",
+        "aliases": [
+          "calcium alginate",
+          "E404",
+          "E 404",
+          "INS 404"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Carrageenan",
+        "aliases": [
+          "carrageenan",
+          "carrageenin",
+          "E407",
+          "E 407",
+          "INS 407"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Locust Bean Gum",
+        "aliases": [
+          "locust bean gum",
+          "carob bean gum",
+          "E410",
+          "E 410",
+          "INS 410"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Guar Gum",
+        "aliases": [
+          "guar gum",
+          "E412",
+          "E 412",
+          "INS 412"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Tragacanth Gum",
+        "aliases": [
+          "tragacanth gum",
+          "E413",
+          "E 413",
+          "INS 413"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Acacia Gum",
+        "aliases": [
+          "acacia gum",
+          "gum arabic",
+          "E414",
+          "E 414",
+          "INS 414"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Xanthan Gum",
+        "aliases": [
+          "xanthan gum",
+          "E415",
+          "E 415",
+          "INS 415"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Karaya Gum",
+        "aliases": [
+          "karaya gum",
+          "E416",
+          "E 416",
+          "INS 416"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Tara Gum",
+        "aliases": [
+          "tara gum",
+          "E417",
+          "E 417",
+          "INS 417"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Gellan Gum",
+        "aliases": [
+          "gellan gum",
+          "E418",
+          "E 418",
+          "INS 418"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sorbitol",
+        "aliases": [
+          "sorbitol",
+          "E420",
+          "E 420",
+          "INS 420"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Mannitol",
+        "aliases": [
+          "mannitol",
+          "E421",
+          "E 421",
+          "INS 421"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Glycerol",
+        "aliases": [
+          "glycerin",
+          "glycerol",
+          "E422",
+          "E 422",
+          "INS 422"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polysorbate 20",
+        "aliases": [
+          "polysorbate 20",
+          "E432",
+          "E 432",
+          "INS 432"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polysorbate 80",
+        "aliases": [
+          "polysorbate 80",
+          "E433",
+          "E 433",
+          "INS 433"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polysorbate 60",
+        "aliases": [
+          "polysorbate 60",
+          "E435",
+          "E 435",
+          "INS 435"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polysorbate 65",
+        "aliases": [
+          "polysorbate 65",
+          "E436",
+          "E 436",
+          "INS 436"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sucrose Acetate Isobutyrate",
+        "aliases": [
+          "sucrose acetate isobutyrate",
+          "SAIB",
+          "E444",
+          "E 444",
+          "INS 444"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Glycerol Esters of Wood Rosin",
+        "aliases": [
+          "glycerol ester of wood rosin",
+          "glycerol esters of wood rosin",
+          "ester gum",
+          "E445",
+          "E 445",
+          "INS 445"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polyglycerol Esters of Fatty Acids",
+        "aliases": [
+          "polyglycerol esters of fatty acids",
+          "E475",
+          "E 475",
+          "INS 475"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Polyglycerol Polyricinoleate",
+        "aliases": [
+          "polyglycerol polyricinoleate",
+          "PGPR",
+          "E476",
+          "E 476",
+          "INS 476"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Silicon Dioxide",
+        "aliases": [
+          "silicon dioxide",
+          "silica",
+          "E551",
+          "E 551",
+          "INS 551"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Silicate",
+        "aliases": [
+          "calcium silicate",
+          "E552",
+          "E 552",
+          "INS 552"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Magnesium Silicates",
+        "aliases": [
+          "magnesium silicates",
+          "E553a",
+          "E 553a",
+          "INS 553a"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Talc",
+        "aliases": [
+          "talc",
+          "hydrated magnesium silicate",
+          "E553b",
+          "E 553b",
+          "INS 553b"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sodium Aluminium Silicate",
+        "aliases": [
+          "sodium aluminium silicate",
+          "sodium aluminosilicate",
+          "E554",
+          "E 554",
+          "INS 554"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Aluminium Silicate",
+        "aliases": [
+          "potassium aluminium silicate",
+          "E555",
+          "E 555",
+          "INS 555"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Calcium Aluminium Silicate",
+        "aliases": [
+          "calcium aluminium silicate",
+          "E556",
+          "E 556",
+          "INS 556"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Ferrocyanides",
+        "aliases": [
+          "ferrocyanides",
+          "potassium ferrocyanide",
+          "sodium ferrocyanide",
+          "calcium ferrocyanide",
+          "E535",
+          "E536",
+          "E538"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Microcrystalline Wax",
+        "aliases": [
+          "microcrystalline wax",
+          "E905",
+          "E 905",
+          "INS 905"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Beeswax",
+        "aliases": [
+          "beeswax",
+          "white beeswax",
+          "yellow beeswax",
+          "E901",
+          "E 901",
+          "INS 901"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Carnauba Wax",
+        "aliases": [
+          "carnauba wax",
+          "E903",
+          "E 903",
+          "INS 903"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Shellac",
+        "aliases": [
+          "shellac",
+          "E904",
+          "E 904",
+          "INS 904"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "L-Cysteine",
+        "aliases": [
+          "L-cysteine",
+          "cysteine hydrochloride",
+          "E920",
+          "E 920",
+          "INS 920"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Benzoyl Peroxide",
+        "aliases": [
+          "benzoyl peroxide",
+          "flour bleaching agent",
+          "E928",
+          "E 928",
+          "INS 928"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Acesulfame Potassium",
+        "aliases": [
+          "acesulfame potassium",
+          "acesulfame K",
+          "acesulfame-K",
+          "E950",
+          "E 950",
+          "INS 950",
+          "Ace-K"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Aspartame",
+        "aliases": [
+          "aspartame",
+          "E951",
+          "E 951",
+          "INS 951"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Saccharin",
+        "aliases": [
+          "saccharin",
+          "sodium saccharin",
+          "calcium saccharin",
+          "E954",
+          "E 954",
+          "INS 954"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Sucralose",
+        "aliases": [
+          "sucralose",
+          "E955",
+          "E 955",
+          "INS 955"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Steviol Glycosides",
+        "aliases": [
+          "steviol glycosides",
+          "stevia glycosides",
+          "steviol glycoside",
+          "E960",
+          "E 960",
+          "INS 960"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Neotame",
+        "aliases": [
+          "neotame",
+          "E961",
+          "E 961",
+          "INS 961"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Aspartame-Acesulfame Salt",
+        "aliases": [
+          "aspartame-acesulfame salt",
+          "acesulfame-aspartame",
+          "E962",
+          "E 962",
+          "INS 962"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Xylitol",
+        "aliases": [
+          "xylitol",
+          "E967",
+          "E 967",
+          "INS 967"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Erythritol",
+        "aliases": [
+          "erythritol",
+          "E968",
+          "E 968",
+          "INS 968"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Advantame",
+        "aliases": [
+          "advantame",
+          "E969",
+          "E 969",
+          "INS 969"
+        ],
+        "severity": "medium",
+        "reason": "Use is subject to EU food-category conditions, purity specifications and/or maximum permitted levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Azodicarbonamide",
+        "aliases": [
+          "azodicarbonamide",
+          "ADA",
+          "E927a",
+          "INS 927a"
+        ],
+        "severity": "high",
+        "reason": "Permitted as a flour-treatment agent in the U.S. under specified conditions and maximum use levels; not authorized as a food additive in the EU.",
+        "regions": [
+          "US",
+          "EU"
+        ]
+      },
+      {
+        "name": "Caffeine",
+        "aliases": [
+          "caffeine",
+          "anhydrous caffeine",
+          "cafeine"
+        ],
+        "severity": "medium",
+        "reason": "Added caffeine is subject to product-specific limits and/or labeling requirements in some jurisdictions.",
+        "regions": [
+          "US",
+          "CA",
+          "EU"
+        ]
+      },
+      {
+        "name": "Quinine",
+        "aliases": [
+          "quinine",
+          "quinine hydrochloride",
+          "quinine sulfate"
+        ],
+        "severity": "medium",
+        "reason": "Use in beverages is subject to limits and labeling requirements in several jurisdictions.",
+        "regions": [
+          "US",
+          "EU"
+        ]
+      },
+      {
+        "name": "Aluminium Sulfate",
+        "aliases": [
+          "aluminum sulfate",
+          "aluminium sulfate",
+          "E520",
+          "E 520",
+          "INS 520"
+        ],
+        "severity": "medium",
+        "reason": "Aluminium-containing additive use is restricted to specified food categories and levels.",
+        "regions": [
+          "EU",
+          "CA"
+        ]
+      },
+      {
+        "name": "Potassium Aluminium Sulfate",
+        "aliases": [
+          "potassium alum",
+          "potassium aluminium sulfate",
+          "potassium aluminum sulfate",
+          "E522",
+          "E 522",
+          "INS 522"
+        ],
+        "severity": "medium",
+        "reason": "Use is restricted to specified food applications and maximum levels.",
+        "regions": [
+          "EU",
+          "IN"
+        ]
+      },
+      {
+        "name": "Ammonium Aluminium Sulfate",
+        "aliases": [
+          "ammonium alum",
+          "ammonium aluminium sulfate",
+          "ammonium aluminum sulfate",
+          "E523",
+          "E 523",
+          "INS 523"
+        ],
+        "severity": "medium",
+        "reason": "Use is restricted to specified food applications and maximum levels.",
+        "regions": [
+          "EU"
+        ]
+      },
+      {
+        "name": "Potassium Iodate",
+        "aliases": [
+          "potassium iodate",
+          "KIO3",
+          "iodate"
+        ],
+        "severity": "medium",
+        "reason": "Use is controlled by food category and fortification standards.",
+        "regions": [
+          "IN",
+          "US",
+          "CA"
+        ]
+      }
+    ],
+    "harmful": [
+      {
+        "name": "Aspartame",
+        "aliases": [
+          "aspartame",
+          "E951",
+          "E 951",
+          "INS 951"
+        ],
+        "severity": "medium",
+        "reason": "IARC classified aspartame as possibly carcinogenic to humans (Group 2B) on limited evidence; JECFA retained an ADI of 40 mg/kg body weight.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sodium Nitrite",
+        "aliases": [
+          "sodium nitrite",
+          "E250",
+          "E 250",
+          "INS 250",
+          "nitrite"
+        ],
+        "severity": "high",
+        "reason": "Can contribute to formation of N-nitroso compounds/nitrosamines; food use is therefore tightly regulated.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sodium Nitrate",
+        "aliases": [
+          "sodium nitrate",
+          "E251",
+          "E 251",
+          "INS 251",
+          "nitrate"
+        ],
+        "severity": "medium",
+        "reason": "Can contribute to endogenous nitrosation; use is regulated in foods such as cured meats.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Potassium Nitrite",
+        "aliases": [
+          "potassium nitrite",
+          "E249",
+          "E 249",
+          "INS 249"
+        ],
+        "severity": "high",
+        "reason": "Nitrite can contribute to formation of potentially carcinogenic N-nitroso compounds; use is controlled.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Potassium Nitrate",
+        "aliases": [
+          "potassium nitrate",
+          "saltpetre",
+          "saltpeter",
+          "E252",
+          "E 252",
+          "INS 252"
+        ],
+        "severity": "medium",
+        "reason": "Nitrate can contribute to endogenous nitrosation; use is controlled in regulated food categories.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "BHA",
+        "aliases": [
+          "butylated hydroxyanisole",
+          "BHA",
+          "E320",
+          "E 320",
+          "INS 320"
+        ],
+        "severity": "medium",
+        "reason": "IARC classifies BHA as possibly carcinogenic to humans; permitted uses remain subject to regulatory limits.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "aliases": [
+          "sulfur dioxide",
+          "sulphur dioxide",
+          "SO2",
+          "E220",
+          "E 220",
+          "INS 220"
+        ],
+        "severity": "medium",
+        "reason": "Sulfites can trigger adverse reactions, including asthma symptoms, in susceptible individuals; use and declaration are regulated.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sodium Metabisulfite",
+        "aliases": [
+          "sodium metabisulfite",
+          "sodium pyrosulfite",
+          "sodium metabisulphite",
+          "E223",
+          "E 223",
+          "INS 223"
+        ],
+        "severity": "medium",
+        "reason": "Sulfite exposure can cause adverse reactions in susceptible individuals; regulated levels and labeling apply.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Potassium Metabisulfite",
+        "aliases": [
+          "potassium metabisulfite",
+          "potassium pyrosulfite",
+          "potassium metabisulphite",
+          "E224",
+          "E 224",
+          "INS 224"
+        ],
+        "severity": "medium",
+        "reason": "Sulfite exposure can cause adverse reactions in susceptible individuals; regulated levels apply.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sodium Bisulfite",
+        "aliases": [
+          "sodium bisulfite",
+          "sodium hydrogen sulfite",
+          "sodium bisulphite",
+          "E222",
+          "E 222",
+          "INS 222"
+        ],
+        "severity": "medium",
+        "reason": "Sulfite exposure can cause adverse reactions in susceptible individuals; regulated levels apply.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Acrylamide",
+        "aliases": [
+          "acrylamide",
+          "2-propenamide",
+          "prop-2-enamide"
+        ],
+        "severity": "high",
+        "reason": "A processing contaminant formed in some foods at high temperatures; IARC classifies acrylamide as probably carcinogenic to humans (Group 2A).",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Industrial Trans Fat",
+        "aliases": [
+          "industrial trans fat",
+          "trans fatty acids",
+          "TFA",
+          "industrial trans-fatty acids"
+        ],
+        "severity": "high",
+        "reason": "WHO recommends eliminating industrially produced trans fat because it increases cardiovascular risk.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sodium Chloride",
+        "aliases": [
+          "sodium chloride",
+          "salt",
+          "table salt",
+          "common salt",
+          "NaCl"
+        ],
+        "severity": "low",
+        "reason": "Excess dietary sodium raises blood pressure and cardiovascular risk; the concern is high intake, not normal culinary use.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "High-Fructose Corn Syrup",
+        "aliases": [
+          "high fructose corn syrup",
+          "HFCS",
+          "glucose-fructose syrup",
+          "fructose-glucose syrup"
+        ],
+        "severity": "low",
+        "reason": "A source of free sugars; high consumption contributes to excess energy intake and dental/metabolic health risk.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Added Sugar",
+        "aliases": [
+          "added sugar",
+          "sugars added",
+          "sucrose added",
+          "table sugar"
+        ],
+        "severity": "low",
+        "reason": "High intake of free/added sugars increases dental caries risk and contributes to excess energy intake.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Caffeine",
+        "aliases": [
+          "caffeine",
+          "anhydrous caffeine"
+        ],
+        "severity": "medium",
+        "reason": "Excessive intake can cause insomnia, anxiety, palpitations and other adverse effects; risk varies by age and pregnancy status.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Sorbitol",
+        "aliases": [
+          "sorbitol",
+          "E420",
+          "E 420",
+          "INS 420"
+        ],
+        "severity": "low",
+        "reason": "Large amounts can cause gastrointestinal discomfort and laxative effects.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Mannitol",
+        "aliases": [
+          "mannitol",
+          "E421",
+          "E 421",
+          "INS 421"
+        ],
+        "severity": "low",
+        "reason": "Large amounts can cause gastrointestinal discomfort and laxative effects.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Xylitol",
+        "aliases": [
+          "xylitol",
+          "E967",
+          "E 967",
+          "INS 967"
+        ],
+        "severity": "low",
+        "reason": "High intake can cause gastrointestinal discomfort and laxative effects.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "Erythritol",
+        "aliases": [
+          "erythritol",
+          "E968",
+          "E 968",
+          "INS 968"
+        ],
+        "severity": "low",
+        "reason": "Large amounts may cause gastrointestinal symptoms; emerging observational findings have not established causation.",
+        "regions": [
+          "GLOBAL"
+        ]
+      },
+      {
+        "name": "4-Methylimidazole",
+        "aliases": [
+          "4-methylimidazole",
+          "4-MEI",
+          "4-MI"
+        ],
+        "severity": "medium",
+        "reason": "A processing by-product associated with some caramel-coloured foods; regulatory limits and exposure assessments vary by jurisdiction.",
+        "regions": [
+          "US",
+          "CA",
+          "EU"
+        ]
+      },
+      {
+        "name": "Phosphate Additives",
+        "aliases": [
+          "phosphate additives",
+          "phosphates",
+          "E338",
+          "E339",
+          "E340",
+          "E341",
+          "E450",
+          "E451",
+          "E452"
+        ],
+        "severity": "low",
+        "reason": "Permitted within limits, but high total phosphorus intake can be a concern for people with kidney disease.",
+        "regions": [
+          "GLOBAL"
+        ]
+      }
+    ]
+  }
+}

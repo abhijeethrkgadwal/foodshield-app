@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "lists": {
+    "banned": [
+      {
+        "name": "Potassium Bromate",
+        "aliases": ["bromated flour", "e924", "potassium bromate"],
+        "severity": "high",
+        "reason": "Banned flour improver in EU/Canada/Brazil",
+        "regions": ["EU", "CA", "BR"]
+      }
+    ],
+    "restricted": [
+      {
+        "name": "Sodium Nitrite",
+        "aliases": ["e250", "nitrite"],
+        "severity": "high",
+        "reason": "Restricted preservative in processed meats",
+        "regions": ["US", "EU"]
+      }
+    ],
+    "harmful": [
+      {
+        "name": "High Fructose Corn Syrup",
+        "aliases": ["hfcs", "corn syrup", "glucose-fructose syrup"],
+        "severity": "high",
+        "reason": "Linked to metabolic disease risk"
+      }
+    ]
+  }
+}

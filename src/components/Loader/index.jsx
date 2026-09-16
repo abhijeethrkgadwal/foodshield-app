@@ -1,30 +1,57 @@
-import React, { useEffect, useState } from 'react'
-import { Box, Button, Flex, Spinner, Text, VStack } from 'native-base'
+import React, { useEffect, useRef, useState } from 'react'
+import { Box, Flex, Spinner, Text, VStack } from 'native-base'
 import Header from '../Header'
 import colors from '@app/theme/colors'
 import { useNavigation } from '@react-navigation/native'
 import { SCREENS } from '@app/constants'
-import { Pressable } from 'react-native'
 import factsListJson from "@app/utils/loaders.json"
+import { scanImageForHarmfulIngredients } from '@app/utils/ocrAnalysis'
 
-const Loader = ({ result, capturedImage }) => {
+const Loader = ({ capturedImage }) => {
   const navigation = useNavigation();
   const [index, setIndex] = useState(0)
+  const hasProcessed = useRef(false)
 
   const { FactsList } = factsListJson
 
-  const onResult = () => {
-    console.log(capturedImage)
-    navigation.navigate(SCREENS.RESULT, { capturedImage: capturedImage })
-  }
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex(index + 1);
+      setIndex((current) => (current + 1) % FactsList.length);
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [index]);
+  }, [FactsList.length]);
+
+  useEffect(() => {
+    if (!capturedImage || hasProcessed.current) {
+      return;
+    }
+
+    hasProcessed.current = true;
+
+    const processScan = async () => {
+      try {
+        const analysis = await scanImageForHarmfulIngredients(capturedImage);
+        navigation.replace(SCREENS.RESULT, {
+          capturedImage,
+          analysis,
+        });
+      } catch (error) {
+        navigation.replace(SCREENS.RESULT, {
+          capturedImage,
+          analysis: {
+            harmful: [],
+            isClean: true,
+            extractedText: "",
+            noTextFound: true,
+            error: error.message ?? "Could not read text from this image.",
+          },
+        });
+      }
+    };
+
+    processScan();
+  }, [capturedImage, navigation]);
 
   return (
     <Flex flex={1} safeArea>
@@ -46,17 +73,10 @@ const Loader = ({ result, capturedImage }) => {
           {FactsList[index]}
         </Text>
         <Text fontFamily="mono" fontWeight="400" color={colors.subText} fontSize={12} mt={'12'}>
-          Please wait while we process...
+          Reading label with on-device OCR...
         </Text>
       </VStack>
-      {/* {!result && 
-        <Button width={"1/2"} mx={"auto"} my="auto" onPress={onResult}>
-          Get Results
-        </Button>
-        } */}
-
     </Flex>
-
   )
 }
 
