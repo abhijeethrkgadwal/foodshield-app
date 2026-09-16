@@ -1,0 +1,10 @@
+FoodShield
+Copyright 2024–2026 Abhijeeth Gadwal and FoodShield contributors
+
+This product includes software developed for the FoodShield project
+(https://github.com/abhijeethrkgadwal/foodshield-app).
+
+Third-party components are used under their respective licenses, including
+(non-exhaustive): Expo, React Native, expo-text-extractor, React Native
+ExecuTorch, and the all-MiniLM-L6-v2 model weights as distributed by their
+upstream publishers. See package metadata and model cards for full terms.
