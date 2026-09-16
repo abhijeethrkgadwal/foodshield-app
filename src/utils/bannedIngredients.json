@@ -1,0 +1,137 @@
+{
+  "ingredients": [
+    {
+      "name": "High Fructose Corn Syrup",
+      "aliases": ["hfcs", "corn syrup", "glucose-fructose syrup", "fructose syrup"],
+      "severity": "high",
+      "reason": "Linked to obesity, insulin resistance, and fatty liver disease"
+    },
+    {
+      "name": "Partially Hydrogenated Oils",
+      "aliases": ["partially hydrogenated", "trans fat", "trans fats"],
+      "severity": "high",
+      "reason": "Trans fats increase heart disease risk and are banned in many countries"
+    },
+    {
+      "name": "Sodium Nitrite",
+      "aliases": ["e250", "nitrite", "sodium nitrite"],
+      "severity": "high",
+      "reason": "Used in processed meats; may form carcinogenic nitrosamines when heated"
+    },
+    {
+      "name": "Sodium Nitrate",
+      "aliases": ["e251", "nitrate", "sodium nitrate", "potassium nitrate", "e252"],
+      "severity": "high",
+      "reason": "Preservative in cured meats; can convert to nitrites in the body"
+    },
+    {
+      "name": "BHA",
+      "aliases": ["butylated hydroxyanisole", "e320", "b.h.a"],
+      "severity": "high",
+      "reason": "Synthetic antioxidant classified as a possible human carcinogen"
+    },
+    {
+      "name": "BHT",
+      "aliases": ["butylated hydroxytoluene", "e321", "b.h.t"],
+      "severity": "medium",
+      "reason": "Synthetic preservative with potential endocrine-disrupting effects"
+    },
+    {
+      "name": "Artificial Colors",
+      "aliases": [
+        "red 40",
+        "yellow 5",
+        "yellow 6",
+        "blue 1",
+        "blue 2",
+        "e102",
+        "e110",
+        "e129",
+        "e133",
+        "fd&c",
+        "artificial colour",
+        "artificial color"
+      ],
+      "severity": "medium",
+      "reason": "Synthetic dyes linked to hyperactivity in children and allergic reactions"
+    },
+    {
+      "name": "Aspartame",
+      "aliases": ["e951", "nutrasweet", "equal"],
+      "severity": "medium",
+      "reason": "Artificial sweetener; some studies suggest neurological and metabolic concerns"
+    },
+    {
+      "name": "Sucralose",
+      "aliases": ["e955", "splenda"],
+      "severity": "medium",
+      "reason": "Artificial sweetener that may affect gut microbiome balance"
+    },
+    {
+      "name": "Acesulfame Potassium",
+      "aliases": ["ace-k", "acesulfame k", "e950"],
+      "severity": "medium",
+      "reason": "Artificial sweetener with limited long-term safety data"
+    },
+    {
+      "name": "Monosodium Glutamate",
+      "aliases": ["msg", "e621", "glutamate", "monosodium glutamate"],
+      "severity": "medium",
+      "reason": "Flavor enhancer; may trigger headaches and sensitivity in some people"
+    },
+    {
+      "name": "Carrageenan",
+      "aliases": ["e407", "carrageenan"],
+      "severity": "medium",
+      "reason": "Thickener linked to gut inflammation in animal studies"
+    },
+    {
+      "name": "Potassium Bromate",
+      "aliases": ["bromated flour", "potassium bromate", "e924"],
+      "severity": "high",
+      "reason": "Flour improver banned in EU, Canada, and Brazil; possible carcinogen"
+    },
+    {
+      "name": "Propyl Paraben",
+      "aliases": ["propyl paraben", "e216", "propylparaben", "paraben"],
+      "severity": "medium",
+      "reason": "Preservative with potential hormone-disrupting properties"
+    },
+    {
+      "name": "Sodium Benzoate",
+      "aliases": ["e211", "benzoate", "sodium benzoate"],
+      "severity": "low",
+      "reason": "Preservative that may form benzene when combined with vitamin C"
+    },
+    {
+      "name": "Potassium Sorbate",
+      "aliases": ["e202", "sorbate", "potassium sorbate"],
+      "severity": "low",
+      "reason": "Preservative generally recognized as safe but may cause skin irritation in sensitive individuals"
+    },
+    {
+      "name": "Maltodextrin",
+      "aliases": ["maltodextrin"],
+      "severity": "medium",
+      "reason": "Highly processed starch with high glycemic index; spikes blood sugar rapidly"
+    },
+    {
+      "name": "Palm Oil",
+      "aliases": ["palm oil", "palm kernel oil", "palm fat"],
+      "severity": "low",
+      "reason": "High in saturated fat; environmental and health concerns with refined palm oil"
+    },
+    {
+      "name": "Titanium Dioxide",
+      "aliases": ["e171", "titanium dioxide", "tio2"],
+      "severity": "medium",
+      "reason": "Whitening agent banned as a food additive in the EU due to genotoxicity concerns"
+    },
+    {
+      "name": "Azodicarbonamide",
+      "aliases": ["ada", "azodicarbonamide", "e927a"],
+      "severity": "high",
+      "reason": "Dough conditioner banned in EU and Australia; breaks down into harmful compounds when heated"
+    }
+  ]
+}

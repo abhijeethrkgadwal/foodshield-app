@@ -33,8 +33,9 @@ const Home = ({ navigation }) => {
           />
           <VStack position="absolute" top={'1/3'} alignItems="center">
           <Button
+            onPress={onPressScan}
             leftIcon={<ICONS.Scan color={colors.white}/>} size="lg" mr={5} width={width/2.5} marginY="auto">
-            <Text fontFamily="mono" fontWeight="400" color={colors.white} pl={4} fontSize={20} onPress={onPressScan}>Scan</Text>
+            <Text fontFamily="mono" fontWeight="400" color={colors.white} pl={4} fontSize={20}>Scan</Text>
           </Button>
           <Text fontFamily="mono" fontWeight="400" fontSize={16} color={colors.text} paddingTop="4" paddingRight="5">
             Scan the product

@@ -1,15 +1,11 @@
 import "react-native-gesture-handler";
 import { useFonts } from 'expo-font';
-import { StyleSheet, Text, View } from 'react-native';
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { StyleSheet } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NativeBaseProvider } from "native-base";
 import theme from "@app/theme";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Navigation from "@app/navigation";
-
-const queryClient = new QueryClient();
-
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,15 +19,13 @@ export default function App() {
     return null;
   }
   return (
-    <QueryClientProvider client={queryClient}>
-      <GestureHandlerRootView style={styles.container}>
-        <NativeBaseProvider theme={theme}>
-          <SafeAreaProvider>
-            <Navigation/>
-          </SafeAreaProvider>
-        </NativeBaseProvider>
-      </GestureHandlerRootView>
-    </QueryClientProvider>
+    <GestureHandlerRootView style={styles.container}>
+      <NativeBaseProvider theme={theme}>
+        <SafeAreaProvider>
+          <Navigation/>
+        </SafeAreaProvider>
+      </NativeBaseProvider>
+    </GestureHandlerRootView>
   );
 }
 
