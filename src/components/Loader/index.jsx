@@ -73,7 +73,7 @@ const Loader = ({ capturedImage }) => {
           {FactsList[index]}
         </Text>
         <Text fontFamily="mono" fontWeight="400" color={colors.subText} fontSize={12} mt={'12'}>
-          Reading label with on-device OCR...
+          Reading label with on-device OCR + MiniLM...
         </Text>
       </VStack>
     </Flex>

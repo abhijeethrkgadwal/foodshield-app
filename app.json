@@ -45,6 +45,18 @@
           "cameraPermission": "Allow FoodShield to access your camera to scan food labels",
           "recordAudioAndroid": false
         }
+      ],
+      "expo-asset",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "17.0"
+          },
+          "android": {
+            "minSdkVersion": 33
+          }
+        }
       ]
     ],
     "experiments": {

@@ -17,7 +17,11 @@ const renderHarmfulItem = (item, index) => (
                 {item.MatchedTerm ? (
                     <Text fontFamily="mono" fontSize={12} fontWeight="400" color={colors.subText} mt={1}>
                         Found as: {item.MatchedText || item.MatchedTerm}
-                        {!item.ExactMatch ? " (fuzzy OCR match)" : ""}
+                        {item.MatchType === "semantic"
+                          ? ` (MiniLM ${Math.round((item.SemanticScore || 0) * 100)}%)`
+                          : !item.ExactMatch
+                            ? " (fuzzy OCR match)"
+                            : ""}
                     </Text>
                 ) : null}
                 {item.Reason ? (

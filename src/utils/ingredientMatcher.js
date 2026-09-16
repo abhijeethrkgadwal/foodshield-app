@@ -205,6 +205,7 @@ export const analyzeTextForHarmfulIngredients = (rawText, data = bannedIngredien
       MatchedText: bestMatch.matchedText,
       ExactMatch: true,
       FuzzyDistance: 0,
+      MatchType: "exact",
       Regions: ingredient.regions ?? [],
     });
   });
@@ -241,6 +242,7 @@ export const analyzeTextForHarmfulIngredients = (rawText, data = bannedIngredien
       MatchedText: bestMatch.matchedText,
       ExactMatch: false,
       FuzzyDistance: bestMatch.distance,
+      MatchType: "fuzzy",
       Regions: ingredient.regions ?? [],
     });
   });

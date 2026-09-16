@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Navigation from "@app/navigation";
+import { EmbedderProvider } from "@app/ai/EmbedderProvider";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -19,7 +20,9 @@ export default function App() {
   return (
     <GestureHandlerRootView style={styles.container}>
       <SafeAreaProvider>
-        <Navigation/>
+        <EmbedderProvider>
+          <Navigation/>
+        </EmbedderProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

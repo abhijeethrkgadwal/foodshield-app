@@ -15,6 +15,7 @@ const Result = () => {
   const isClean = analysis?.isClean ?? true
   const noTextFound = analysis?.noTextFound ?? false
   const scanError = analysis?.error
+  const matchMode = analysis?.matchMode
 
   const { height } = useWindowDimensions();
 
@@ -48,6 +49,11 @@ const Result = () => {
             </VStack>
           </HStack>
 
+          {matchMode ? (
+            <Text fontFamily="mono" fontWeight="400" fontSize={12} color={colors.subText} mt={'2'}>
+              Match mode: {matchMode === "minilm+fuzzy" ? "MiniLM + fuzzy OCR" : "Fuzzy OCR"}
+            </Text>
+          ) : null}
           {scanError ? (
             <Text fontFamily="mono" fontWeight="400" fontSize={16} color={colors.red} mt={'5'}>
               {scanError}
