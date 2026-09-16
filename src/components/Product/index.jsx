@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, HStack, Image, Text, VStack } from 'native-base'
+import { Box, Button, HStack, Image, Text, VStack } from '@app/ui'
 import { IMAGES } from '@app/assets/images'
 import { ICONS } from '@app/assets/svgs'
 import colors from '@app/theme/colors'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Flex } from 'native-base';
+import { Flex } from '@app/ui';
 import colors from '@app/theme/colors';
 import { SCREENS } from '@app/constants';
 import Home from '@app/screens/home';

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, Progress, Text, VStack } from 'native-base'
+import { HStack, Progress, Text, VStack } from '@app/ui'
 import colors from '@app/theme/colors'
 
 const renderHarmfulItem = (item, index) => (

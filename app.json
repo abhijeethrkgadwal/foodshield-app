@@ -6,15 +6,12 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": false,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.davnixtech.FoodShield"
+      "bundleIdentifier": "com.davnixtech.FoodShield",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow FoodShield to access your camera to scan food labels"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -22,21 +19,36 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.davnixtech.FoodShield",
-      "versionCode": 1
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-font",
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "imageWidth": 200
+        }
+      ],
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow FoodShield to access your camera",
-          "microphonePermission": "Allow FoodShield to access your microphone",
+          "cameraPermission": "Allow FoodShield to access your camera to scan food labels",
           "recordAudioAndroid": false
         }
       ]
-    ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
   }
 }
