@@ -9,9 +9,15 @@ const renderHarmfulItem = (item, index) => (
                 <Text fontFamily="mono" fontSize={16} fontWeight="600" color={colors.text}>
                     {item.Ingredient}
                 </Text>
+                {item.Category ? (
+                    <Text fontFamily="mono" fontSize={12} fontWeight="600" color={colors.red} mt={1}>
+                        {item.Category}
+                    </Text>
+                ) : null}
                 {item.MatchedTerm ? (
                     <Text fontFamily="mono" fontSize={12} fontWeight="400" color={colors.subText} mt={1}>
-                        Found as: {item.MatchedTerm}
+                        Found as: {item.MatchedText || item.MatchedTerm}
+                        {!item.ExactMatch ? " (fuzzy OCR match)" : ""}
                     </Text>
                 ) : null}
                 {item.Reason ? (
@@ -63,7 +69,7 @@ const IngredientSection = ({ valueBasedIngredients, positiveIngreditents }) => {
     ) : (
         <VStack pb={'10'}>
             <Text fontFamily="mono" fontWeight="400" fontSize="18" color={colors.red} pb={'3'}>
-                Harmful
+                Detected
             </Text>
             {valueBasedIngredients.map(renderHarmfulItem)}
         </VStack>
