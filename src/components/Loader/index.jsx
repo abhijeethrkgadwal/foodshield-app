@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Box, Flex, Spinner, Text, VStack } from 'native-base'
+import { Box, Flex, Spinner, Text, VStack } from '@app/ui'
 import Header from '../Header'
 import colors from '@app/theme/colors'
 import { useNavigation } from '@react-navigation/native'

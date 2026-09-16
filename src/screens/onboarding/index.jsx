@@ -1,7 +1,7 @@
 import { View, Text, useWindowDimensions } from 'react-native'
 import React from 'react'
 import colors from '@app/theme/colors'
-import { Button, Flex, Heading, Image, StatusBar, VStack } from 'native-base'
+import { Button, Flex, Heading, Image, StatusBar, VStack } from '@app/ui'
 import { IMAGES } from '@app/assets/images'
 import { SCREENS } from '@app/constants'
 import { ICONS } from '@app/assets/svgs'

@@ -3,7 +3,7 @@ import { useWindowDimensions } from 'react-native';
 import { GestureHandlerRootView, ScrollView } from 'react-native-gesture-handler';
 import BottomSheet, { BottomSheetFlashList, BottomSheetView } from '@gorhom/bottom-sheet';
 import colors from '@app/theme/colors';
-import { HStack, Pressable, Text, VStack } from 'native-base';
+import { HStack, Pressable, Text, VStack } from '@app/ui';
 import { ICONS } from '@app/assets/svgs';
 import Product from '@app/components/Product';
 

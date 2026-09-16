@@ -1,6 +1,6 @@
 import { useWindowDimensions, View } from 'react-native'
 import React from 'react'
-import { Button, Flex, HStack, Image, Text, VStack } from 'native-base'
+import { Button, Flex, HStack, Image, Text, VStack } from '@app/ui'
 import colors from '@app/theme/colors'
 import Header from '@app/components/Header'
 import { IMAGES } from '@app/assets/images'

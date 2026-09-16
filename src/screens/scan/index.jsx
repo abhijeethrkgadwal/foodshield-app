@@ -1,6 +1,6 @@
 import colors from '@app/theme/colors';
 import { CameraView, useCameraPermissions } from 'expo-camera';
-import { Box, Button, Flex, HStack, Image, Spinner, Text, View, VStack } from 'native-base';
+import { Box, Button, Flex, HStack, Image, Spinner, Text, View, VStack } from '@app/ui';
 import React, { useRef, useState } from 'react';
 import Header from '@app/components/Header';
 import { IMAGES } from '@app/assets/images';

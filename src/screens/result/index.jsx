@@ -1,7 +1,7 @@
 import { useWindowDimensions } from 'react-native'
 import React from 'react'
 import Header from '@app/components/Header'
-import { Flex, HStack, Image, ScrollView, Text, VStack } from 'native-base'
+import { Flex, HStack, Image, ScrollView, Text, VStack } from '@app/ui'
 import colors from '@app/theme/colors'
 import { ICONS } from '@app/assets/svgs'
 import IngredientSection from '@app/components/Ingredients'

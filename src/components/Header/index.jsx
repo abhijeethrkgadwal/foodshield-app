@@ -1,6 +1,6 @@
 import { useWindowDimensions } from 'react-native'
 import React from 'react'
-import { Box, Heading, HStack, Pressable, Text, VStack } from 'native-base'
+import { Box, Heading, HStack, Pressable, Text, VStack } from '@app/ui'
 import { ICONS } from '@app/assets/svgs'
 import colors from '@app/theme/colors'
 import { useNavigation } from '@react-navigation/native'
