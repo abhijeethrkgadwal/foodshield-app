@@ -1,4 +1,4 @@
-import bannedIngredients from "./bannedIngredients.json";
+import bannedIngredients from "./ingredientLists_2026_formatted.json";
 
 const SEVERITY_SCORE = {
   high: 90,
@@ -12,12 +12,26 @@ const CATEGORY_LABEL = {
   harmful: "Harmful",
 };
 
-// Max edit distance allowed for OCR typos, by term length.
+// Additive codes and short tokens must match exactly to avoid E171 ≈ E172 false positives.
+const isExactOnlyTerm = (normalizedTerm) => {
+  if (normalizedTerm.length <= 4) return true;
+  return /^(e|ins)\s*\d+[a-z]?$/.test(normalizedTerm);
+};
+
+// Max edit distance for OCR typos, by term length. Kept strict on purpose.
 const fuzzyThreshold = (termLength) => {
-  if (termLength <= 3) return 0;
-  if (termLength <= 6) return 1;
-  if (termLength <= 12) return 2;
+  if (termLength <= 5) return 0;
+  if (termLength <= 8) return 1;
+  if (termLength <= 14) return 2;
   return 3;
+};
+
+const isWindowClaimed = (window, claimedWindows) => {
+  if (claimedWindows.has(window)) return true;
+  for (const claimed of claimedWindows) {
+    if (claimed.includes(window) || window.includes(claimed)) return true;
+  }
+  return false;
 };
 
 export const normalizeText = (text) =>
@@ -57,7 +71,15 @@ export const levenshtein = (a, b) => {
 
 const tokenize = (text) => text.split(" ").filter(Boolean);
 
-const findBestFuzzyMatch = (normalizedText, normalizedTerm) => {
+const hasExactTerm = (normalizedText, normalizedTerm) => {
+  if (!normalizedTerm) return false;
+  const pattern = new RegExp(`\\b${escapeRegex(normalizedTerm)}\\b`, "i");
+  return pattern.test(normalizedText);
+};
+
+const findBestFuzzyMatch = (normalizedText, normalizedTerm, claimedWindows) => {
+  if (isExactOnlyTerm(normalizedTerm)) return null;
+
   const tokens = tokenize(normalizedText);
   const termTokens = tokenize(normalizedTerm);
   const windowSize = Math.max(termTokens.length, 1);
@@ -68,13 +90,24 @@ const findBestFuzzyMatch = (normalizedText, normalizedTerm) => {
   for (let size = Math.max(1, windowSize - 1); size <= windowSize + 1; size += 1) {
     for (let i = 0; i <= tokens.length - size; i += 1) {
       const window = tokens.slice(i, i + size).join(" ");
-      const distance = levenshtein(window, normalizedTerm);
 
-      if (distance <= threshold && (!best || distance < best.distance)) {
+      // Skip windows already claimed by an exact ingredient match
+      // (prevents sodium nitrite → sodium nitrate via token "nitrite").
+      if (isWindowClaimed(window, claimedWindows)) continue;
+
+      const distance = levenshtein(window, normalizedTerm);
+      const ratio = distance / normalizedTerm.length;
+
+      if (
+        distance > 0 &&
+        distance <= threshold &&
+        ratio <= 0.25 &&
+        (!best || distance < best.distance)
+      ) {
         best = {
           matchedText: window,
           distance,
-          exact: distance === 0,
+          exact: false,
         };
       }
     }
@@ -83,45 +116,31 @@ const findBestFuzzyMatch = (normalizedText, normalizedTerm) => {
   return best;
 };
 
-const termMatches = (normalizedText, term) => {
+const matchExactTerm = (normalizedText, term) => {
   const normalizedTerm = normalizeText(term);
-  if (!normalizedTerm || normalizedTerm.length < 2) {
-    return null;
-  }
+  if (!normalizedTerm || normalizedTerm.length < 2) return null;
 
-  // Exact match first (faster + more reliable for short codes like E250).
-  if (normalizedTerm.length <= 3) {
-    const pattern = new RegExp(`\\b${escapeRegex(normalizedTerm)}\\b`, "i");
-    if (pattern.test(normalizedText)) {
-      return {
-        matchedTerm: term,
-        matchedText: normalizedTerm,
-        exact: true,
-        distance: 0,
-      };
-    }
-    return null;
-  }
+  if (!hasExactTerm(normalizedText, normalizedTerm)) return null;
 
-  if (normalizedText.includes(normalizedTerm)) {
-    return {
-      matchedTerm: term,
-      matchedText: normalizedTerm,
-      exact: true,
-      distance: 0,
-    };
-  }
+  return {
+    matchedTerm: term,
+    matchedText: normalizedTerm,
+    exact: true,
+    distance: 0,
+  };
+};
 
-  // Fuzzy match for OCR typos (e.g. "aspartarne" ≈ "aspartame").
-  const fuzzy = findBestFuzzyMatch(normalizedText, normalizedTerm);
-  if (!fuzzy) {
-    return null;
-  }
+const matchFuzzyTerm = (normalizedText, term, claimedWindows) => {
+  const normalizedTerm = normalizeText(term);
+  if (!normalizedTerm || normalizedTerm.length < 2) return null;
+
+  const fuzzy = findBestFuzzyMatch(normalizedText, normalizedTerm, claimedWindows);
+  if (!fuzzy) return null;
 
   return {
     matchedTerm: term,
     matchedText: fuzzy.matchedText,
-    exact: fuzzy.exact,
+    exact: false,
     distance: fuzzy.distance,
   };
 };
@@ -147,17 +166,20 @@ export const flattenIngredientLists = (data = bannedIngredients) => {
 
 export const analyzeTextForHarmfulIngredients = (rawText, data = bannedIngredients) => {
   const normalizedText = normalizeText(rawText);
+  const ingredients = flattenIngredientLists(data);
   const matches = [];
   const seen = new Set();
+  const claimedWindows = new Set();
 
-  flattenIngredientLists(data).forEach((ingredient) => {
+  // Pass 1: exact matches only (highest confidence).
+  ingredients.forEach((ingredient) => {
     const searchTerms = [ingredient.name, ...(ingredient.aliases ?? [])];
     let bestMatch = null;
 
     searchTerms.forEach((term) => {
-      const result = termMatches(normalizedText, term);
+      const result = matchExactTerm(normalizedText, term);
       if (!result) return;
-      if (!bestMatch || result.distance < bestMatch.distance) {
+      if (!bestMatch || result.matchedText.length > bestMatch.matchedText.length) {
         bestMatch = result;
       }
     });
@@ -167,6 +189,10 @@ export const analyzeTextForHarmfulIngredients = (rawText, data = bannedIngredien
     const key = ingredient.name.toLowerCase();
     if (seen.has(key)) return;
     seen.add(key);
+    claimedWindows.add(bestMatch.matchedText);
+    tokenize(bestMatch.matchedText).forEach((token) => {
+      if (token.length > 3) claimedWindows.add(token);
+    });
 
     matches.push({
       Ingredient: ingredient.name,
@@ -177,7 +203,43 @@ export const analyzeTextForHarmfulIngredients = (rawText, data = bannedIngredien
       Percentage: SEVERITY_SCORE[ingredient.severity] ?? 50,
       MatchedTerm: bestMatch.matchedTerm,
       MatchedText: bestMatch.matchedText,
-      ExactMatch: bestMatch.exact,
+      ExactMatch: true,
+      FuzzyDistance: 0,
+      Regions: ingredient.regions ?? [],
+    });
+  });
+
+  // Pass 2: fuzzy OCR matches for ingredients not already found.
+  ingredients.forEach((ingredient) => {
+    const key = ingredient.name.toLowerCase();
+    if (seen.has(key)) return;
+
+    const searchTerms = [ingredient.name, ...(ingredient.aliases ?? [])];
+    let bestMatch = null;
+
+    searchTerms.forEach((term) => {
+      const result = matchFuzzyTerm(normalizedText, term, claimedWindows);
+      if (!result) return;
+      if (!bestMatch || result.distance < bestMatch.distance) {
+        bestMatch = result;
+      }
+    });
+
+    if (!bestMatch) return;
+
+    seen.add(key);
+    claimedWindows.add(bestMatch.matchedText);
+
+    matches.push({
+      Ingredient: ingredient.name,
+      Reason: ingredient.reason,
+      Severity: ingredient.severity,
+      Category: CATEGORY_LABEL[ingredient.category] ?? ingredient.category,
+      CategoryKey: ingredient.category,
+      Percentage: SEVERITY_SCORE[ingredient.severity] ?? 50,
+      MatchedTerm: bestMatch.matchedTerm,
+      MatchedText: bestMatch.matchedText,
+      ExactMatch: false,
       FuzzyDistance: bestMatch.distance,
       Regions: ingredient.regions ?? [],
     });
