@@ -1,5 +1,6 @@
 import { extractTextFromImage, isSupported } from "expo-text-extractor";
 import { analyzeTextForHarmfulIngredients } from "./ingredientMatcher";
+import miniLMEmbedder from "@app/ai/miniLMEmbedder";
 
 export { analyzeTextForHarmfulIngredients } from "./ingredientMatcher";
 
@@ -22,8 +23,18 @@ export const scanImageForHarmfulIngredients = async (imageUri) => {
     };
   }
 
-  return {
-    ...analyzeTextForHarmfulIngredients(extractedText),
-    noTextFound: false,
-  };
+  try {
+    const semanticResult = await miniLMEmbedder.analyzeText(extractedText);
+    return {
+      ...semanticResult,
+      noTextFound: false,
+    };
+  } catch {
+    return {
+      ...analyzeTextForHarmfulIngredients(extractedText),
+      noTextFound: false,
+      matchMode: "fuzzy",
+      semanticAvailable: false,
+    };
+  }
 };

@@ -1,13 +1,15 @@
-import { useWindowDimensions, View } from 'react-native'
+import { useWindowDimensions } from 'react-native'
 import React from 'react'
-import { Button, Flex, HStack, Image, Text, VStack } from '@app/ui'
+import { Button, Flex, Image, Text, VStack } from '@app/ui'
 import colors from '@app/theme/colors'
 import Header from '@app/components/Header'
 import { IMAGES } from '@app/assets/images'
 import { ICONS } from '@app/assets/svgs'
 import { SCREENS } from '@app/constants'
+import { useEmbedder } from '@app/ai/EmbedderProvider'
 
 const Home = ({ navigation }) => {
+  const { isReady, isLoading, downloadProgress, error } = useEmbedder()
 
   const onPressScan = () => {
     navigation.navigate(SCREENS.SCAN)
@@ -15,12 +17,23 @@ const Home = ({ navigation }) => {
 
   const { width, height } = useWindowDimensions();
 
+  const modelStatus = error
+    ? "Fuzzy matching ready (MiniLM unavailable)"
+    : isReady
+      ? "On-device MiniLM ready"
+      : isLoading
+        ? `Preparing MiniLM… ${downloadProgress}%`
+        : "Preparing on-device AI…"
+
   return (
     <Flex bgColor={colors.gray} flex={0} safeArea>
       <Header showBack={false}/>
       <VStack mt={height/32} >
         <Text fontFamily="mono" fontWeight="600" fontSize={31} color={colors.green} ml={'5'}>
           Eat Smart,{"\n"}Stay Healthy : {"\n"}Scan, Analyse, and {"\n"}Choose Better
+        </Text>
+        <Text fontFamily="mono" fontWeight="400" fontSize={12} color={colors.subText} ml={'5'} mt={2}>
+          {modelStatus}
         </Text>
         <VStack alignItems="center" mt={height/24}>
           <Image
