@@ -1,7 +1,17 @@
 {
   "name": "foodshield",
   "version": "1.0.0",
+  "description": "Offline-first food label scanner using on-device OCR and local AI to detect banned, restricted, and harmful ingredients.",
+  "license": "Apache-2.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhijeethrkgadwal/foodshield-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhijeethrkgadwal/foodshield-app/issues"
+  },
+  "homepage": "https://github.com/abhijeethrkgadwal/foodshield-app#readme",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
